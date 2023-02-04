@@ -27,7 +27,7 @@ void set_counter_prev(double count) {
 }
 
 void rotation_handler() {
-      // Due to encoder having an extra pulse between detents, I increment/decrement the counter by 0.5,
+  // Due to encoder having an extra pulse between detents, I increment/decrement the counter by 0.5,
   // This gives a whole number output per detent. The counter can be cast to an int in the main loop.
   enc_a_curr = gpio_get(PIN_A);
   enc_b_curr = gpio_get(PIN_B);
