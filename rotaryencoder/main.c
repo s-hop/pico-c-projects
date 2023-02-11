@@ -3,11 +3,14 @@
 #include "pico/stdlib.h"
 #include "rencoder.h"
 
+#define PIN_CLK 0
+#define PIN_DT 1
+
 int main() {
   // Initialise USB for reading print output
   stdio_init_all();
 
-  encoder_init();
+  encoder_init(PIN_CLK, PIN_DT);
 
   for (;;) {
     sleep_ms(1);
