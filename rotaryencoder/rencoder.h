@@ -4,11 +4,9 @@
 extern const int PIN_A;
 extern const int PIN_B;
 
-extern double get_counter();
-extern double get_counter_prev();
-extern void set_counter_prev(double count);
-
-extern void rotation_handler();
-extern void encoder_init();
+double get_counter();
+double get_counter_prev();
+void set_counter_prev(double count);
+void encoder_init();
 
 #endif // RENCODER_H
